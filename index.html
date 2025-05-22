@@ -1,104 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="or">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Vision NGO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ଦ ଭିସନ୍ - ସଂସ୍ଥାର ଉଦ୍ଦେଶ୍ୟ</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    /* Reset */
+    * {
+      box-sizing: border-box;
       margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: "Noto Sans Oriya", "Lohit Oriya", sans-serif, sans-serif;
       background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-size: 1.1em;
     }
-    header {
-      background-color: #02475e;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    nav {
-      text-align: center;
-      margin-top: 10px;
-    }
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #02475e;
-      font-weight: bold;
-    }
-    section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-    h2 {
-      color: #02475e;
-    }
-    footer {
-      background-color: #02475e;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      position: relative;
-      bottom: 0;
-      width: 100%;
-    }
-    .cta {
-      background-color: #f0a500;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-      margin-top: 2rem;
-      font-size: 1.2rem;
+
+    /* Container */
+    .container {
+      display: flex;
+      flex: 1;
+      max-width: 1200px;
+      margin: 20px auto;
+      background: #fff;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
       border-radius: 8px;
+      overflow: hidden;
+    }
+
+    /* Sidebar */
+    aside.sidebar {
+      background-color: #2c3e50;
+      color: #ecf0f1;
+      width: 220px;
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    aside.sidebar h2 {
+      margin-bottom: 25px;
+      font-weight: 600;
+      font-size: 1.3em;
+      border-bottom: 1px solid #34495e;
+      padding-bottom: 10px;
+    }
+    aside.sidebar nav a {
+      color: #ecf0f1;
+      text-decoration: none;
+      margin-bottom: 15px;
+      display: block;
+      transition: color 0.3s;
+    }
+    aside.sidebar nav a:hover {
+      color: #1abc9c;
+    }
+
+    /* Main content */
+    main.content {
+      padding: 40px 40px 60px;
+      flex: 1;
+    }
+    main.content h1 {
+      color: #2c3e50;
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2em;
+      font-weight: 700;
+    }
+    main.content p {
+      margin-bottom: 18px;
+    }
+
+    /* Header */
+    header.site-header {
+      background-color: #1abc9c;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      padding: 15px 30px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+    header.site-header img.logo {
+      height: 50px;
+      margin-right: 15px;
+    }
+    header.site-header h1 {
+      font-size: 1.8em;
+      font-weight: 700;
+      font-family: "Noto Sans Oriya", "Lohit Oriya", sans-serif;
+    }
+
+    /* Footer */
+    footer.site-footer {
+      background-color: #2c3e50;
+      color: #bdc3c7;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 0.9em;
+      margin-top: auto;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        margin: 10px;
+      }
+      aside.sidebar {
+        width: 100%;
+        padding: 20px;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      aside.sidebar nav a {
+        margin-bottom: 0;
+        margin-left: 15px;
+      }
+      header.site-header {
+        flex-direction: column;
+        text-align: center;
+      }
+      header.site-header h1 {
+        margin-top: 8px;
+        font-size: 1.5em;
+      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>The Vision NGO</h1>
-    <p>Empowering lives. Building futures.</p>
-  </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#work">Our Work</a>
-    <a href="#contact">Contact</a>
-    <a href="#donate">Donate</a>
-  </nav>
+<header class="site-header">
+  <img src="path/to/your-logo.png" alt="ଦ ଭିସନ୍ Logo" class="logo" />
+  <h1>ଦ ଭିସନ୍</h1>
+</header>
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p>
-      The Vision is a non-profit organization dedicated to uplifting underprivileged communities through education, healthcare, and empowerment. We believe in a world where everyone has equal opportunities to thrive.
-    </p>
-  </section>
+<div class="container">
+  <aside class="sidebar">
+    <h2>ନେଭିଗେସନ୍</h2>
+    <nav>
+      <a href="#">ମୂଳ ପୃଷ୍ଠା</a>
+      <a href="#">ଉଦ୍ଦେଶ୍ୟ ଓ ଲକ୍ଷ୍ୟ</a>
+      <a href="#">କାର୍ଯ୍ୟକ୍ରମ</a>
+      <a href="#">ସମ୍ପର୍କ</a>
+    </nav>
+  </aside>
 
-  <section id="work">
-    <h2>What We Do</h2>
-    <ul>
-      <li>📘 Educating children in rural areas</li>
-      <li>🏥 Organizing free health camps</li>
-      <li>👩‍💼 Vocational training for women</li>
-      <li>🌱 Environmental awareness programs</li>
-    </ul>
-  </section>
+  <main class="content">
+    <h1>ସଂସ୍ଥାର ଉଦ୍ଦେଶ୍ୟ ଓ ଲକ୍ଷ୍ୟ</h1>
+    <p>ଏହି ସଂସ୍ଥା “ଦ ଭିସନ୍” ର ଉଦ୍ଦେଶ୍ୟ ଓ ବିଶ୍ୱାସକୁ ଗ୍ରାମବାସୀ ମଧ୍ୟରେ ପ୍ରସାର କରିବ, ସ୍ୱ-ସହାୟତା ଗୋଷ୍ଠି ଓ ସାମାଜିକ କାର୍ଯ୍ୟ ମାଧ୍ୟମରେ ସମାଜ ଉନ୍ନତି କରିବ ।</p>
+    <p>ଏହା ଏକ ରାଜନୈତିକ ମୁକ୍ତ ସଂସ୍ଥା ଭାବେ ସମସ୍ତଙ୍କ ପାଇଁ ସମତା ବିଶ୍ୱାସକୁ ଅନୁସରଣ କରିବ ।</p>
+    <p>ସାମାଜିକ ପରମ୍ପରା, ଯୋଗ, ଆୟୁର୍ବେଦ ଇତ୍ୟାଦି ଉପରେ ଗବେଷଣା କରି ସମାଜ ସେବା କାର୍ଯ୍ୟ ଚଲାଇବ ।</p>
+    <p>ଗ୍ରାମ ଅଞ୍ଚଳର ଲୋକଙ୍କ ସହଯୋଗ ଓ ସଚେତନତା ମାଧ୍ୟମରେ ସମସ୍ୟାର ସମାଧାନ କରିବ ।</p>
+    <p>ନାରୀ ସଶକ୍ତିକରଣ, ଶିଶୁ ସୁରକ୍ଷା, ସ୍ୱାସ୍ଥ୍ୟ ଶିବିର, ଓ ଅନ୍ୟାନ୍ୟ ସାମାଜିକ ସେବା କାର୍ଯ୍ୟରେ ଲିପ୍ତ ରହିବ ।</p>
+    <p>ଶିଶୁ ଓ କାମକରୁଥିବା ନାରୀମାନଙ୍କ ପାଇଁ କ୍ରେଚ୍ ଆରମ୍ଭ କରିବ ।</p>
+    <p>ଗ୍ରାମୀଣ ଅଞ୍ଚଳରେ ପୁସ୍ତକାଳୟ, ପାଠ ଘର, ମହିଳା ଓ ପୁରୁଷ ଶିକ୍ଷା କେନ୍ଦ୍ର ଖୋଲିବ ।</p>
+    <p>ୟୁବ ଓ ମହିଳାଙ୍କ ପାଇଁ ବୃତ୍ତିମୂଳକ ପ୍ରଶିକ୍ଷଣ କାର୍ଯ୍ୟକ୍ରମ ଚାଲାଇବ ।</p>
+    <p>ସାମାଜିକ ସେବା, କ୍ରୀଡ଼ା କାର୍ଯ୍ୟକ୍ରମ, ତଥା ପ୍ରାକୃତିକ ବିପଦରେ ସାହାଯ୍ୟ କରିବ ।</p>
+    <p>ଅନ୍ୟ ଗ୍ରାମ ବିକାଶ କାର୍ଯ୍ୟକ୍ରମ, ଯେପରିକି କୃଷି, ପୋଷଣ, ମାଛ ଚାଷ, ବନ ସଂରକ୍ଷଣ ଇତ୍ୟାଦି ଉପରେ କାର୍ଯ୍ୟ କରିବ ।</p>
+    <p>ସମ୍ବାଦପତ୍ର, ପତ୍ରିକା, ଓ ବ୍ରଡକାଷ୍ଟ ମାଧ୍ୟମରେ ଜନସଚେତନତା ପ୍ରସାର କରିବ ।</p>
+    <p>ଏନ୍.ଏସ୍‌.ଏସ୍‌ ମାଧ୍ୟମରେ ଗ୍ରାମ ଅଞ୍ଚଳରେ ଶିକ୍ଷା ବିସ୍ତାର କରିବ ।</p>
+    <p>ସଂସ୍ଥା ସଦସ୍ୟଙ୍କ ଠାରୁ ଜମା ଏବଂ ରାଜ୍ୟ ଓ କେନ୍ଦ୍ର ସରକାରୀ ଧନସାହାଯ୍ୟ ମାଧ୍ୟମରେ ଅର୍ଥ ସଂଗ୍ରହ କରି ବିକାଶ ମୂଖୀ କାର୍ଯ୍ୟକ୍ରମ ଚାଲାଇବ ।</p>
+  </main>
+</div>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:info@thevision.org">info@thevision.org</a></p>
-    <p>Phone: +91-9876543210</p>
-    <p>Location: Bengaluru, India</p>
-  </section>
+<footer class="site-footer">
+  © 2025 ଦ ଭିସନ୍ ସଂସ୍ଥା | ସମ୍ପର୍କ: info@thevision.ngo | ଫୋନ୍: +91 86183 76244
+</footer>
 
-  <section id="donate" class="cta">
-    <p><strong>Support our mission</strong> — Every contribution makes a difference.</p>
-    <p><a href="https://www.exampledonate.com" style="color: white; text-decoration: underline;">Donate Now</a></p>
-  </section>
-
-  <footer>
-    &copy; 2025 The Vision NGO. All rights reserved.
-  </footer>
 </body>
 </html>
-
