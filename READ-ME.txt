@@ -1,9 +1,9 @@
   =>  Template Name    : TheVision - Driven by purpose, powered by compassion, committed to change
 
-  =>  Template Link    : https://htmlcodex.com/free-nonprofit-website-template
+  =>  Template Link    : #/free-nonprofit-website-template
 
-  =>  Template License : https://htmlcodex.com/license (or read the LICENSE.txt file)
+  =>  Template License : #/license (or read the LICENSE.txt file)
 
-  =>  Template Author  : HTML Codex
+  =>  Template Author  : Team TheVision
 
-  =>  Author Website   : https://htmlcodex.com
+  =>  Author Website   : #
